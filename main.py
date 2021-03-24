@@ -14,7 +14,7 @@ r = requests.post('http://127.0.0.1:8000/estimate/', json=context)
 if r.status_code == 200:
     answer = str(input('Do you want to save response image? [y/N]: '))
     if answer.lower()=='y':
-        print("image saved as response.jpg")
-        open('response.jpg', 'wb').write(base64.b64decode(r.json()))
+        print("image saved as res.jpg")
+        open('res.jpg', 'wb').write(base64.b64decode(r.json()))
     else:
         print('successfully responsed:', r.status_code)
