@@ -30,7 +30,7 @@ $ pip3 install -r requirements.txt
 #### For quick start you can install models from link below
 [dropbox](https://www.dropbox.com/sh/7xbup2qsn7vvjxo/AABWFksdlgOMXR_r5v3RwKRYa?dl=0)
 
-**Download the pytorch models(.pth) and put them in a directory named model in the project root directory**
+**Download the pytorch models(.pth) and put them in a directory named _model_ in the project root directory**
 
 #### After you have installed those packeges, what you will do next?
 
@@ -39,7 +39,7 @@ Now you can run your server first.
 ``` bash
 $ uvicorn post_est:app --reload
 ```
- Then you should be get the messages below:
+Then you should be get the messages below:
  
 ``` bash
 INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
@@ -66,6 +66,7 @@ After said yes, you get message below:
 image saved as res.jpg
 ```
 
-Also you can configure post json context from _main.py_.
+## [IMPORTANT!]
+You can configure post json context from _main.py_.
 If you want to draw position keypoints of hand you should define value of "hand_pose" as 1.
 To draw rectangle for right and left hands(if it exists) you should define "which_hands" as 1.
