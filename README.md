@@ -67,6 +67,6 @@ image saved as res.jpg
 ```
 
 ## [IMPORTANT!]
-You can configure post json context from _main.py_.
-If you want to draw position keypoints of hand you should define value of "hand_pose" as 1.
-To draw rectangle for right and left hands(if it exists) you should define "which_hands" as 1.
+* You can configure post json context from _main.py_.
+* If you want to draw position keypoints of hand you should define value of "hand_pose" as 1.
+* To draw rectangle for right and left hands(if it exists) you should define "which_hands" as 1.
